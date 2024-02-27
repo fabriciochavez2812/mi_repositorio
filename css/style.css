@@ -14,6 +14,9 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+    
 }
 
     /* Header */    
@@ -61,13 +64,12 @@ nav ul li a{
     margin: 5px;
 }
 
+
 nav ul li a:hover{
     color: #ADE8F4;
     text-shadow: 3px 2px 0px black;
-}
-
-    
-    @media only screen and (max-width:620px){
+}  
+    @media only screen and (max-width:300px){
         header{
             width: 100%;
             height: auto;
@@ -90,79 +92,6 @@ nav ul li a:hover{
 
     }
 
-        /*Body-INICIO*/
-
-        .container {
-            position: relative;
-            width: 100%;
-            height: auto;
-            background-color: black;
-            overflow: hidden;
-        }
-        
-        .slider input {
-            visibility: hidden;
-            display: none;
-        }
-        
-        .buttons {
-            position: absolute;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            bottom: 2%; 
-            gap: 10px;
-        }
-        
-        .buttons label {
-            width: 20px;
-            height: 20px;
-            background-color: white;
-            opacity: 0.5;
-            cursor: pointer;
-            z-index: 1;
-            transition: 300ms ease-in-out;
-        }
-        
-        .buttons label:hover {
-            scale: 1.2;
-            opacity: 1;
-        }
-        
-        .content {
-            position: relative;
-            width: 400vw;
-            display: flex;
-            transition: 400ms ease-in-out;
-            white-space: nowrap; 
-        }
-        
-        .slide {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; 
-        }
-        
-        .slide:nth-child(1) { background-color: #90E0EF; }
-        .slide:nth-child(2) { background-color: #90E0EF; }
-        .slide:nth-child(3) { background-color: #90E0EF; }
-        .slide:nth-child(4) { background-color: #90E0EF; }
-        
-        .slider input:checked ~ .content {
-            left: calc(-100vw * (var(--index) - 1));
-        }
-        
-        .slider input:nth-child(1):checked ~ .content { --index: 1; }
-        .slider input:nth-child(2):checked ~ .content { --index: 2; }
-        .slider input:nth-child(3):checked ~ .content { --index: 3; }
-        .slider input:nth-child(4):checked ~ .content { --index: 4; }
-
-
-
 footer{
     background-color: #023E8A;
     width: 100%; 
@@ -170,6 +99,8 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1em 0;
+    margin-top: auto;
 }
 .caja__redes{
     width: 640px;

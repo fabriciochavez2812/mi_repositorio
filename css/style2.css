@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #90E0EF;
+  overflow: hidden;
+}
+.container .slider input {
+  visibility: hidden;
+  display: none;
+}
+.container .buttons {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 2%;
+  gap: 10px;
+}
+.container .buttons label {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 1;
+  transition: 300ms ease-in-out;
+}
+.container .buttons label:hover {
+  scale: 1.2;
+  opacity: 1;
+}
+.container .content {
+  position: relative;
+  width: 400vw;
+  display: flex;
+  transition: 400ms ease-in-out;
+  white-space: nowrap;
+}
+.container .content .slide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container .slider input:checked ~ .content {
+  left: calc(-100vw * (var(--index) -1));
+}
+.container .slider #slide-1:checked ~ .content {
+  left: 0;
+}
+.container .slider #slide-2:checked ~ .content {
+  left: -100vw;
+}
+.container .slider #slide-3:checked ~ .content {
+  left: -200vw;
+}
+.container .slider #slide-4:checked ~ .content {
+  left: -300vw;
+}
+
+/*# sourceMappingURL=style2.css.map */
