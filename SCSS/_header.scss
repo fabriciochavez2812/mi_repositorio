@@ -1,0 +1,55 @@
+@import 'base';
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #023E8A;
+    position: static;
+    top: 0;
+    
+    
+    .caja-logo{
+        padding-left: 20px;
+
+        .logo{
+            font-family: Bungee;
+            font-size: 30px;
+            color: #fff;
+            
+            & :hover{
+                color: $color-hover;
+                text-shadow: $sombra-nav;
+
+            }
+        }
+    }
+
+    nav{
+        ul{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            
+            li{
+                a{
+                    font-family: Bungee;
+                    font-size: 15px;
+                    color: #fff;
+                    margin:5px;
+
+                    &:hover{
+                        color: $color-hover;
+                        text-shadow: $sombra-nav;
+                    }
+                }
+            }
+        }
+    }
+}

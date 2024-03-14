@@ -1,0 +1,47 @@
+.container-productos{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: auto;
+
+    .titulo-productos{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        h1{
+            font-size: 80px;
+            text-align: center;
+        }
+    }
+
+    .producto__{
+        background-color: #f5efd7;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin: 15px 10px ;
+        text-align: center;
+        height: auto;
+    }
+
+    img{
+        width: 200px;
+        clip-path: inset(0 0 0 round 20%);
+        margin: 15px auto;
+    }
+
+    h2{
+        padding: 0 20px ;
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:600px){
+    .container-productos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

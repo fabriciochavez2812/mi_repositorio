@@ -1,0 +1,46 @@
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+    .left-part{
+        margin: 50px 40px ;
+        width: 500px;
+        height: auto;
+        display: flexbox;
+        flex-direction: column;
+    
+        h1{
+            font-size: 50px;
+            font-family: Bungee;
+        }
+    
+        form{
+            margin: 30px;
+    
+            label{
+                font-size: 15px;
+                font-family: Bungee;
+                margin: 0px 10px;
+            }
+    
+            #comentario{
+                width: 400px;
+                height: 300px;
+            }
+        }
+    }
+    
+    .right-part{
+        margin: 50px 40px;
+
+        .mapa{
+            width: 600px;
+            height: 450px;
+            margin: 110px 110px;
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

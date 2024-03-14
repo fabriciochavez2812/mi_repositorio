@@ -7,8 +7,7 @@
     <meta name="author" content="Fabricio Chavez">
     <title>Contactanos</title>
     <!--CSS & SCSS-->
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="/css/stylesass.css">
+    <link rel="stylesheet" href="/css/style2.css">
 
     <!-- Fonts CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,49 +32,46 @@
             <li><a href="./productos.html">Productos</a></li>                     
             <li><a href="./contactos.html">Contactanos</a></li>
             <li><input type="search" name="Búsqueda" id="busqueda"></li>
-            <li><input type="submit" value="Buscar"></li>
-            <li><a href="./checkout.html"><img src="/img/107831.png" alt="carrito" class="car" style="width: 30px;"></a></li>                        
+            <li><input type="submit" value="Buscar"></li>                       
         </ul>  
     </nav>
 </header> 
 
 <main>
-        <article>
-            <p><h1>Contactanos</h1></p>
-        </article>
-        <article>
+    <article class="left-part">
+            <h1>Contactanos</h1>
             <form action="form.php" method="post">
-            <section>
+            <div class="form-nombre">
                 <label for="">Nombre</label>
                 <input type="text" name="nombre" id="nombre" required="">
-            </section>
-            <section>
+            </div>
+            <div class="form-apellido">
                 <label for="">Apellidos</label>
                 <input type="text" name="apellidos" id="apellidos" required="">
-            </section>
-            <section>
+            </div>
+            <div class="form-email">
                 <label for="">Email</label>
                 <input type="email" name="email" id="email" placeholder="hola123@gmail.com" required="">
-            </section>
-            <section>
+            </div>
+            <div class="form-telefono">
                 <label for="">Teléfono</label>
                 <input type="tel" name="telefono" id="telefono" placeholder="Número telefonico" required="">
-            </section>
-            <section>
+            </div>
+            <div class="form-comentario">
                 <label for="">Escribe un comentario</label><br>
                 <textarea name="comentario" id="" cols="30" rows="10" required=""></textarea>
-            </section>
-            <section>
-                    <input type="submit" value="Enviar">
-            </section>
-            </form>
-        </article>
-        <article>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.9175952468963!2d-77.01616232307087!3d-11.980203740668905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf8909505a6b%3A0x2ee55d0fc32cbe7d!2sCanto%20Bello%20163%2C%20San%20Juan%20de%20Lurigancho%2015408!5e0!3m2!1ses-419!2spe!4v1703563765448!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </article>
-    </main>
+            <div class="form-enviar">
+                    <input type="submit" value="Enviar">
+            </div>
+            </form>
+    </article>
+    <article class="right-part">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.9175952468963!2d-77.01616232307087!3d-11.980203740668905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf8909505a6b%3A0x2ee55d0fc32cbe7d!2sCanto%20Bello%20163%2C%20San%20Juan%20de%20Lurigancho%2015408!5e0!3m2!1ses-419!2spe!4v1703563765448!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </article>
+</main>
     <footer>
         <div class="caja__redes">
             <div class="titulo-redes">
